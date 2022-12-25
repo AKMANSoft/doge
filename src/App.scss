@@ -1407,3 +1407,307 @@ section {
         }
     }
 }
+
+//lottery styles
+.lottery-body {
+    background: url('/images/LotteryPage.png')no-repeat center;
+    background-size: 100% 100%;
+    flex: auto;
+    flex-direction: row;
+}
+.left{
+    @media (max-width: 900px) {
+    display: none;    
+    }
+}
+.Delot1img{
+    width: 67vh;
+    height: 82vh;
+}
+.ApeGloveCopy{
+    position: absolute;  
+    bottom: -13vh;
+    z-index: 10;
+}
+.ApeGloveCopyimg{
+    width: 57vh;
+    height: 65vh;
+}
+.WaifuCopy1{
+    position: absolute; 
+    bottom: -12vh;
+    left: 130px;
+}
+.WaifuCopy1img{
+  height: 83%;
+  width: 83%;;
+}
+.lootery-machine-frame{
+    background: url('/images/Group1348.png')no-repeat center;
+    background-size: 80% 90%;
+    flex: auto;
+    flex-direction: row;
+    //margin-top: -1vh;
+    @media (max-width: 900px) {
+        background-size: 100% 100%; 
+    }
+}
+.horizontal-center{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Jackpot{
+    padding-top:30vh;
+}
+.Jackpotimg{
+    align-self: center;
+    width: 60%;
+    height: 12vh;
+    @media (max-width: 900px) {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.JackpotField{
+    background: url('/images/Jackpot Field.png')no-repeat center;
+    background-size: 63% 73%;
+    flex: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: -3.5vh;
+    z-index: 1000;
+
+    @media (max-width: 900px) {
+        background-size: 75% 73%;
+    }
+
+}
+.QD1Button{
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 2vh;
+    @media (max-width: 900px) {
+        margin-bottom: 1vh;
+    }
+
+}
+.QD1Button:hover{
+    background-color: transparent;
+    border-color: transparent;
+ }
+.QD1img{
+    align-self: center;
+    width: 100%;
+    height: 13vh;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+.lottery-counter{
+    color: white;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.Machine-back{
+    background: url('/images/Machine-back-copy-1.png')no-repeat center;
+    background-size: 76% 100%;
+    flex: auto;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4vh;
+    @media (max-width: 900px) {
+        background-size: 95% 100%;
+        height: 20rem;
+        width: 100%;
+        margin-top: -1vh;
+        // margin-bottom:30vh;
+        z-index: 100;
+    }
+    
+}
+.more-draw-container{
+    height: fit-content;
+    flex-direction: row;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    @media (max-width: 900px) {
+        width: 65%;
+    }
+}
+.morebuttons{
+    margin-top: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    width: fit-content;
+}
+.morebuttons:hover{
+    background-color: transparent;
+    border-color: transparent;
+    width: fit-content;
+}
+.morebuttonsimg{
+    width: 55px;
+    height: 55px;
+}
+.lottery-number-header{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.lottry-number-field{
+    background: url('/images/lotterynumber.png') no-repeat center;
+    background-size: 100% 59px;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-start;
+    align-items: center;
+    @media (max-width: 900px) {
+        background-size: 100% 60px;
+        width: 70%;
+    }
+}
+.lottery-number-text{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: Inter;
+}
+.table-header{
+    background: url('/images/Rectangle289.png') no-repeat center;
+    background-size: 100% 110%;
+    background: rgba(20, 9, 21, 0.9);
+    padding-top: 52px;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media (max-width: 900px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        background: none;
+        background-color: black;
+    }
+}
+.table-head{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+        margin-top: 10vh;
+        flex-direction:column;
+        align-items: center;
+        display:flex;
+    }
+}
+.table-header-left{
+    display: flex;
+    flex-direction: column;
+}
+.table-header-left-text{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+    padding-top: 12px;
+    @media (max-width: 900px) {
+        padding-top: 12px;
+        text-align: center;
+    }
+}
+.DOGEPROJECTALLTIMEPAYOUTS{
+    height: fit-content;
+    width: fit-content;
+    @media (max-width: 900px) {
+        padding-bottom: 25px;
+    }
+}
+.listHeader{
+    margin-top: 70px;
+    color: white;
+}
+.listHeaderText{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.TablelistItem{
+    height: 58px;
+    color: white;
+    border: 1px solid #F026BC;
+}
+.TablelistItemContainer{
+    padding-left:20px;
+}
+.tablWeek{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #FDB359;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5vh;
+    @media (max-width: 900px) {
+        margin-left: 0vh;
+    }
+    
+}
+.tablWeekText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+.tableWinnerContainer{
+    display: flex;
+    flex-direction: column;
+}
+.tableName{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}
+.tableEmail{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.tablePayoutText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: -2vh;
+}

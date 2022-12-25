@@ -6,6 +6,7 @@ const Mint = React.lazy(() => import ('../Containers/mint'));
 const Doge = React.lazy(() => import ('../Containers/doge'));
 const HouseOfDoge = React.lazy(() => import ('../Containers/houseOfDoge'));
 const HouseOfShiba = React.lazy(() => import ('../Containers/houseOfShiba'));
+const Lottery = React.lazy(() => import ('../Containers/lottery'));
 
 const MyRoutes = () => {
   return (
@@ -37,6 +38,12 @@ const MyRoutes = () => {
       <Route path="/houseOfShiba" element={
         <React.Suspense fallback={<span>...Loading</span>}>
           <HouseOfShiba />
+        </React.Suspense>
+        }
+      />
+      <Route path="/lottery" element={
+        <React.Suspense fallback={<span>...Loading</span>}>
+          <Lottery />
         </React.Suspense>
         }
       />
