@@ -1493,7 +1493,9 @@ section {
     @media (max-width: 900px) {
         margin-bottom: 1vh;
     }
-
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .QD1Button:hover{
     background-color: transparent;

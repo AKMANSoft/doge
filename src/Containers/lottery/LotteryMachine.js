@@ -11,9 +11,13 @@ import Group1348 from "../../images/Group1348.png";
 
 export default function LotteryMachine() {
   const [draw, setDraw] = useState(false);
+  const [luckynumber, setLuckynumber] = useState(Math.floor(100 + Math.random() * 999));
   const [looteryno, setLooteryno] = useState(
     Math.floor(10000 + Math.random() * 99999)
   );
+  useEffect(() => {
+    setLuckynumber(Math.floor(100 + Math.random() * 999));
+  }, [draw]);
 
   return (
     <div style={{ height: "100%" }}>
@@ -28,7 +32,7 @@ export default function LotteryMachine() {
               className="lottery-counter"
               startVal={0}
               //duration={6}
-              end={Math.floor(100 + Math.random() * 999)}
+              end={luckynumber}
             />
           ) : (
             <text className="lottery-counter">000</text>
@@ -36,7 +40,7 @@ export default function LotteryMachine() {
         </div>
 
         <div className="horizontal-center QD1">
-          <button className="QD1Button" onClick={() => setDraw(true)}>
+          <button className="QD1Button" onClick={() => setDraw(!draw)}>
             <Image src={QD1} alt="mission-img" className="QD1img" />
           </button>
         </div>
